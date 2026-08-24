@@ -142,19 +142,24 @@
             margin-top: 35px;
         }
 
-        .photo-placeholder {
-            aspect-ratio: 1 / 1;
-            background: #151515;
-            border: 1px solid #292929;
-            border-radius: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #555;
-            text-align: center;
-            padding: 20px;
-        }
+     .photos figure {
+    margin: 0;
+}
 
+.photos img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 16px;
+    border: 1px solid #292929;
+    display: block;
+}
+
+.photos figcaption {
+    margin-top: 10px;
+    color: #888;
+    font-size: 14px;
+}
         footer {
             border-top: 1px solid #222;
             padding: 30px 0;
@@ -247,23 +252,45 @@
                 Official photographs of Fahim Asad.
             </p>
 
-            <div class="photos">
+<div class="photos">
 
-                <div class="photo-placeholder">
-                    Photo coming soon
-                </div>
+    <figure>
+        <img 
+            src="fahim-asad-brand.jpg"
+            alt="Fahim Asad"
+            loading="lazy"
+        >
+        <figcaption>Fahim Asad</figcaption>
+    </figure>
 
-                <div class="photo-placeholder">
-                    Photo coming soon
-                </div>
+    <figure>
+        <img 
+            src="fahim-asad-personal-brand.jpg"
+            alt="Fahim Asad personal brand photograph"
+            loading="lazy"
+        >
+        <figcaption>Fahim Asad</figcaption>
+    </figure>
 
-                <div class="photo-placeholder">
-                    Photo coming soon
-                </div>
+    <figure>
+        <img 
+            src="fahim-asad-portrait.jpg"
+            alt="Fahim Asad portrait"
+            loading="lazy"
+        >
+        <figcaption>Fahim Asad</figcaption>
+    </figure>
 
-            </div>
+    <figure>
+        <img 
+            src="fahim-asad-professional-photo.jpg"
+            alt="Fahim Asad professional photograph"
+            loading="lazy"
+        >
+        <figcaption>Fahim Asad</figcaption>
+    </figure>
 
-        </div>
+</div>
     </section>
 
 </main>
